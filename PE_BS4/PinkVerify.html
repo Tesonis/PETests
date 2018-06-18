@@ -1,0 +1,313 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Business Portfolio,IT Portfolio,Simulations" />
+    <meta name="theme-color" content="#23527c" />
+    <title>Training Courses &amp; Programs</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.bootstrap4.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="content/css/siteTheme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../modularNav/content/css/navHeader.css">
+    
+    <style>
+        btn{
+            padding-left:0;
+            padding-right:0;
+        }
+        .card{
+            padding:0;
+            border:none;
+        }
+        .card-body{
+            height:100px;
+        }
+        .card-body img{
+            max-height:70px;
+        }
+        .card-footer{
+            background:none;
+        }
+        section img{
+            max-width:150px !important;
+            max-height:150px;
+        }
+        .dataTables_length,
+        .dataTables_info{
+            text-align: left;
+        }
+        .dataTables_filter{
+            display:none;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <!-- Nav Section -->
+
+    <section id="navTop"></section>
+    <section id="navMain" class="sticky-top"></section>
+    <!-- Copy to load in nav header -->
+    <header class="masthead bg-light text-center">
+        <img class="img-fluid mb-5 d-block mx-0 " src="http://via.placeholder.com/1920x300" alt="" height="350">
+    </header>
+    <section id="content">
+        
+        <section id="table" class="container container-fluid bg-white text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <div class="card my-5 border-0">
+                        <h2>All Verified Tools</h2><br />
+                        <div id="new_search_div" class="mb-4">
+                            <input id="newDataSearch" type="text" class="form-control form-control-lg" placeholder="Search PinkVerify"/>
+                        </div>
+                        <div>
+                            <h4>Filter by Processes</h4>
+                            <h6>Click on the processes relevant to your organization</h6>
+                            <div class="row container container-fluid text-left mt-3">
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">AM</button>Asset Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">AVM</button>Availability Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">CAP</button>Capacity Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">CHG</button>Change Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">EV</button>Event Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">FM</button>Financial Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">IM</button>Incident Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">ITSCM</button>IT Service Continuity Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">KM</button>Knowledge Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">PM</button>Problem Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">REL</button>Release & Deployment Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">RF</button>Request Fulfillment</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">SACM</button>Service Asset & Configuration Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">SCM</button>Service Catalog Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">SLM</button>Service Level Management</div>
+                                <div class="col-lg-4 col-md-6"><button class="btn btn-sm btn-outline-info mr-2 fil-btn">SPM</button>Service Portfolio Management</div>
+                            </div>
+                        </div>
+                        <hr />
+                            <table width="100%" class="table table-bordered table-responsive-lg" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Vendor</th>
+                                        <th>Tool</th>
+                                        <th>Verified Processes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="content/img/verifylogos/Wendia.JPG" class="img-fluid align-middle" style="margin-top:5px;"/><span class="d-none">Wendia</span></td>
+                                        <td>Wendia POB vG6</td>
+                                        <td>15 Processes<br />
+                                            <span class="text-info col-2">AVM</span>
+                                            <span class="text-info col-2">CAP</span>
+                                            <span class="text-info col-2">CHG</span>
+                                            <span class="text-info col-2">EV</span>
+                                            <span class="text-info col-2">FM</span>
+                                            <span class="text-info col-2">IM</span>
+                                            <span class="text-info col-2">ITSCM</span>
+                                            <span class="text-info col-2">KM</span>
+                                            <span class="text-info col-2">PM</span>
+                                            <span class="text-info col-2">REL</span>
+                                            <span class="text-info col-2">RF</span>
+                                            <span class="text-info col-2">SACM</span>
+                                            <span class="text-info col-2">SCM</span>
+                                            <span class="text-info col-2">SLM</span>
+                                            <span class="text-info col-2">SPM</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="content/img/verifylogos/Axios.png" class="img-fluid align-middle" /><span class="d-none">Axios</span></td>
+                                        <td>Assyst v10.0</td>
+                                        <td>16 Processes<br />
+                                            <span class="text-info col-2">AM</span>
+                                            <span class="text-info col-2">AVM</span>
+                                            <span class="text-info col-2">CAP</span>
+                                            <span class="text-info col-2">CHG</span>
+                                            <span class="text-info col-2">EV</span>
+                                            <span class="text-info col-2">FM</span>
+                                            <span class="text-info col-2">IM</span>
+                                            <span class="text-info col-2">ITSCM</span>
+                                            <span class="text-info col-2">KM</span>
+                                            <span class="text-info col-2">PM</span>
+                                            <span class="text-info col-2">REL</span>
+                                            <span class="text-info col-2">RF</span>
+                                            <span class="text-info col-2">SACM</span>
+                                            <span class="text-info col-2">SCM</span>
+                                            <span class="text-info col-2">SLM</span>
+                                            <span class="text-info col-2">SPM</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="content/img/verifylogos/usu.png" class="img-fluid align-middle" /><span class="d-none">USU</span></td>
+                                        <td>USU Valuemation v4.5</td>
+                                        <td>16 Processes<br />
+                                            <span class="text-info col-2">AM</span>
+                                            <span class="text-info col-2">AVM</span>
+                                            <span class="text-info col-2">CAP</span>
+                                            <span class="text-info col-2">CHG</span>
+                                            <span class="text-info col-2">EV</span>
+                                            <span class="text-info col-2">FM</span>
+                                            <span class="text-info col-2">IM</span>
+                                            <span class="text-info col-2">ITSCM</span>
+                                            <span class="text-info col-2">KM</span>
+                                            <span class="text-info col-2">PM</span>
+                                            <span class="text-info col-2">REL</span>
+                                            <span class="text-info col-2">RF</span>
+                                            <span class="text-info col-2">SACM</span>
+                                            <span class="text-info col-2">SCM</span>
+                                            <span class="text-info col-2">SLM</span>
+                                            <span class="text-info col-2">SPM</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="content/img/verifylogos/DexonSoftware.png" class="img-fluid align-middle" style="margin-top:5px;" /><span class="d-none">Dexon</span></td>
+                                        <td>Dexon 6</td>
+                                        <td>15 Processes<br />
+                                            <span class="text-info col-2">AVM</span>
+                                            <span class="text-info col-2">CAP</span>
+                                            <span class="text-info col-2">CHG</span>
+                                            <span class="text-info col-2">EV</span>
+                                            <span class="text-info col-2">FM</span>
+                                            <span class="text-info col-2">IM</span>
+                                            <span class="text-info col-2">ITSCM</span>
+                                            <span class="text-info col-2">KM</span>
+                                            <span class="text-info col-2">PM</span>
+                                            <span class="text-info col-2">REL</span>
+                                            <span class="text-info col-2">RF</span>
+                                            <span class="text-info col-2">SACM</span>
+                                            <span class="text-info col-2">SCM</span>
+                                            <span class="text-info col-2">SLM</span>
+                                            <span class="text-info col-2">SPM</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="content/img/verifylogos/Agiloft.png" class="img-fluid align-middle" style="margin-top:5px;" /><span class="d-none">Agiloft</span></td>
+                                        <td>Agiloft v6</td>
+                                        <td>
+                                            11 Processes<br />
+                                            <span class="text-info col-2">CHG</span>
+                                            <span class="text-info col-2">EV</span>
+                                            <span class="text-info col-2">IM</span>
+                                            <span class="text-info col-2">KM</span>
+                                            <span class="text-info col-2">PM</span>
+                                            <span class="text-info col-2">REL</span>
+                                            <span class="text-info col-2">RF</span>
+                                            <span class="text-info col-2">SACM</span>
+                                            <span class="text-info col-2">SCM</span>
+                                            <span class="text-info col-2">SLM</span>
+                                            <span class="text-info col-2">SPM</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="content/img/verifylogos/Alemba.png" class="img-fluid align-middle" /><span class="d-none">Alemba</span></td>
+                                        <td>Alemba vFire v9</td>
+                                        <td>
+                                            13 Processes<br />
+                                            <span class="text-info col-2">AM</span>
+                                            <span class="text-info col-2">AVM</span>
+                                            <span class="text-info col-2">CHG</span>
+                                            <span class="text-info col-2">EV</span>
+                                            <span class="text-info col-2">IM</span>
+                                            <span class="text-info col-2">KM</span>
+                                            <span class="text-info col-2">PM</span>
+                                            <span class="text-info col-2">REL</span>
+                                            <span class="text-info col-2">RF</span>
+                                            <span class="text-info col-2">SACM</span>
+                                            <span class="text-info col-2">SCM</span>
+                                            <span class="text-info col-2">SLM</span>
+                                            <span class="text-info col-2">SPM</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="content/img/verifylogos/ALVAO.jpg" class="img-fluid align-middle" /><span class="d-none">Alvao</span></td>
+                                        <td>ALVAO 10.0</td>
+                                        <td>
+                                            7 Processes<br />
+                                            <span class="text-info col-2">AM</span>
+                                            <span class="text-info col-2">CHG</span>
+                                            <span class="text-info col-2">IM</span>
+                                            <span class="text-info col-2">PM</span>
+                                            <span class="text-info col-2">RF</span>
+                                            <span class="text-info col-2">SACM</span>
+                                            <span class="text-info col-2">SCM</span>
+                                            <span class="text-info col-2">SPM</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+        </section>
+    </section>
+    <section id="footer"></section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.1/js/responsive.bootstrap4.min.js"></script>
+    <!--DataTables-->
+    <!-- Modular Navigation -->
+    <script>
+        $("#navTop").load("../modularNav/navHeader.html #navTop");
+        $("#navMain").load("../modularNav/navHeader.html #navMain");
+    $("#footer").load("../modularNav/footer.html");
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true,
+            "pageLength": 25,
+            "columnDefs": [
+            { "width": "50%", "targets": 2 }
+            ]
+        });
+        dTable = $('#dataTables-example').DataTable();
+        $('#newDataSearch').keyup(function () {
+            dTable.search($(this).val()).draw();
+        })
+        $(".fil-btn").click(function () {
+            if ($(this).hasClass("btn-info"))
+            {
+                removeFilter($(this));
+                $(this).addClass('btn-outline-info');
+                $(this).removeClass('btn-info');
+            }
+            else {
+                addFilter($(this));
+                $(this).removeClass('btn-outline-info');
+                $(this).addClass('btn-info');
+            }
+            
+        });
+    });
+    function addFilter(b) {
+        dTable.search($('#newDataSearch').val() + ' ' + b.text()).draw();
+        $('#newDataSearch').val($('#newDataSearch').val() + ' ' + b.text());
+    }
+    function removeFilter(b) {
+        s = $('#newDataSearch').val().replace(' ' + b.text(), '');
+        dTable.search(s).draw();
+        $('#newDataSearch').val(s);
+    }
+    </script>
+</body>
+</html>

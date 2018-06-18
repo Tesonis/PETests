@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Business Frontpage - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="content/css/siteTheme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../modularNav/content/css/navHeader.css">
+    <style type="text/css">
+        section {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <section id="navTop"></section>
+    <section id="navMain" class="sticky-top"></section>
+
+    <!-- Header with Background Image -->
+    <header class="business-header">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="display-3 text-center  mt-4">Header</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div>
+        <section>
+            <div class="row text-center py-5">
+                <div class="col-sm-9" style="margin:auto;">
+                    <h1 class="mt-4">Training & Certifications</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum vulputate risus non fermentum. Morbi porta elementum dolor congue tempor.
+                        Morbi mattis, purus vel sodales porttitor, quam mi placerat massa, nec blandit sapien metus a lorem. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Aenean sapien orci, lobortis at luctus vel, gravida eget leo.
+                    </p>
+                    <p>At Pink Elephant, we offer a wide range of courses to fit your needs.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- /.row -->
+        <section class=" bg-light py-5">
+            <div class="row col-lg-9" style="margin:auto;">
+                <div class="col-md-12 text-center">
+                    <h2 class="mt-4">Featured</h2>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#">
+                        <div class="card">
+                            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Item 1</h4>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Item 2</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Item 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <div class="card">
+                        <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" src=>Item 4</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row text-center" style="margin:auto;">
+                <div class="col-lg-4 col-sm-12 offset-lg-2 offset-sm-0">
+                    <a class="btn btn-outline-pink btn-lg" href="#?">View All Courses &raquo;</a>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <a class="btn btn-outline-pink btn-lg" href="#?">Full Course Schedule &raquo;</a>
+                </div>
+            </div>
+        </section>
+        <!-- /.row -->
+
+        <section class="well-lg py-5">
+            <div id="byRole" class="tabcontent">
+                <div class="col-lg-6" style="margin:auto; background:#262626; color:white; padding:20px 40px;">
+                    <h2 class="text-center">Search course by role</h2>
+                    <br>
+                    <div class="row">
+                        <select id="selRole" class="form-control col-md-9" onchange="change_myselect(this.value)"></select>
+                        <button type="button" class="btn btn-outline btn-danger col-md-3" style="background:#da208b; margin:auto; width:auto;">Find Your Course</button>
+                    </div>
+                </div>
+                <div id="compTable" class="col-md-9" style="margin:auto; padding:0px;">
+                </div>
+                <div id="roleProducts" class="row col-md-9 text-center" style="margin:auto; display:none; margin-top:40px;">
+                </div>
+            </div>
+        </section>
+
+        <section style="background:#3b4f6c;" class="text-white py-5">
+            <div class="row col-md-9" style="margin:auto;">
+                <div class="col-lg-4">
+                    <img style='width:100%;' src="http://via.placeholder.com/1080x600">
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="col-md-12 text-center">
+                        <h2>Develop Your Career Path</h2>
+                        <br><br>
+                        <h5>
+                            Ut sodales erat sit amet massa mattis, a ultricies leo dictum. Sed lobortis placerat arcu eu venenatis.
+                            Vivamus quis purus vitae odio ultricies efficitur. Sed diam risus, tincidunt eu gravida finibus, varius id
+                            leo. Suspendisse potenti.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light py-5">
+            <div class="row col-lg-9" style="margin:auto;">
+                <div class="col-lg-12 text-center">
+                    <h2>Choose your learning path</h2><br>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="service-box">
+                                <h1 class="iconNum">1</h1>
+                                <a href="#?"><h4>Learning Path 1</h4></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="service-box">
+                                <h1 class="iconNum">2</h1>
+                                <a href="#?"><h4>Learning Path 2</h4></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="service-box">
+                                <h1 class="iconNum">3</h1>
+                                <a href="#?"><h4>Learning Path 3</h4></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="service-boxW">
+                                <h1 class="iconNum">4</h1>
+                                <a href="#?"><h4>Learning Path 4</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="py-5 bg-white;">
+            <div class="row col-lg-9" style="margin:auto;">
+                <div class="col-lg-7 ">
+                    <div class="col-md-12 text-center">
+                        <h2>Business Simulations</h2>
+                        <br><br>
+                        <h5>
+                            Ut sodales erat sit amet massa mattis, a ultricies leo dictum. Sed lobortis placerat arcu eu venenatis.
+                            Vivamus quis purus vitae odio ultricies efficitur. Sed diam risus, tincidunt eu gravida finibus, varius id
+                            leo. Suspendisse potenti.
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <a class="btn btn-outline-dark btn-lg btn-block" href="#">Sim 1</a>
+                    <a class="btn btn-outline-dark btn-lg btn-block" href="#">Sim 2</a>
+                    <a class="btn btn-outline-dark btn-lg btn-block" href="#">Sim 3</a>
+                </div>
+            </div>
+        </section>
+        <section class="bg-dark">
+            <div class="row col-lg-9 mx-auto py-5" >
+                <div class="col-md-8">
+                    <h1>Arrange a career audit with one of our expert advisers</h1>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-outline btn-danger px-5 py-4 btn-block" style="background:#da208b;"><h5>Book an Appointment</h5></button>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- Footer -->
+    <section id="footer"></section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+
+    <!-- Modular Navigation -->
+    <script>
+    $("#navTop").load("../modularNav/nav-template.html #navTop");
+    $("#navMain").load("../modularNav/nav-template.html #navMain");
+    $("#footer").load("../modularNav/footer.html");
+    </script>
+
+    <script async>
+      function openTab(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+
+      function compCourse(id){
+        html2 = "";
+        html2 += "<h3 class='col-lg-12'>Related Products</h3>"
+        for (var i = 0; i < b.compCourses.length; i++){
+          if (b.compCourses[i].compID == id && id != ""){
+            for (var j = 0; j < b.compCourses[i].courses.length; j++){
+              for(var k = 0; k< c.Courses.length; k++){
+                if(b.compCourses[i].courses[j] == c.Courses[k].courseID){
+
+                  html2 += "<div class='col-lg-3 col-md-6'>";
+                  html2 += "<a href='"+ c.Courses[k].url +" ' target='_blank'><div class='icontainer'>";
+                  html2 += "<img style='width:100%;' src='http://via.placeholder.com/270x150'>";
+                  html2 += "<div class='content'>";
+                  html2 += "<h5>"+c.Courses[k].name+"</h5>";
+                  html2 += "</div></a></div></div>";
+                }
+              }
+            }
+          }
+        }
+        $("#roleProducts").html(html2);
+        $("#roleProducts").show();
+      }
+    </script>
+    <script src="content/js/data.js"></script>
+
+
+</body>
+
+</html>

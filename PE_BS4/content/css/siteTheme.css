@@ -1,0 +1,45 @@
+﻿a{
+  color: #3B4F6C; 
+  transition: color 0.3s ease-out;
+}
+a:hover{
+  text-decoration: unset;
+  color: #da208b; 
+}
+.btn-outline-pink{
+    border: 1px solid #da208b;
+    color:  #da208b;
+    background: transparent;
+}
+.btn-outline-pink:hover{
+    color:  white;
+    background: #da208b;
+}
+.btn-pink{
+    border: 1px solid #da208b;
+    color:  white;
+    background: #da208b;
+}
+.btn-pink:hover {
+    color:  #da208b;
+    background: white;
+}
+.bg-dark{
+    background-color: #1F2A39 !important;
+    color: white;
+}
+.grayscale img{
+    filter: grayscale(100%);
+    opacity:0.8;
+}
+.grayscale img:hover{
+    filter: grayscale(0%);
+    opacity:1;
+}
+@media (max-width: 767px) {
+    .container-fluid {
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
